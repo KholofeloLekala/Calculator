@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Scientific Calculator using HTML, CSS and Js
+	</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 style="color: darkslategrey; text-align: center;">
+		Scientific Calculator</h1>
+	<form>
+		<table>
+			<tr>
+				<td colspan="6">
+					<input id="display" type="text" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1"
+						onclick="addNumber('1')"></td>
+				<td><input type="button" value="2"
+						onclick="addNumber('2')"></td>
+				<td><input type="button" value="3"
+						onclick="addNumber('3')"></td>
+
+				<td><input type="button" value="C"
+						onclick="clearing()"></td>
+				<td><input type="button" value="="
+						onclick="calculate()"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4"
+						onclick="addNumber('4')"></td>
+				<td><input type="button" value="5"
+						onclick="addNumber('5')"></td>
+				<td><input type="button" value="6"
+						onclick="addNumber('6')"></td>
+
+				<td><input type="button" value="-"
+						onclick="addAS('-')"></td>
+				<td><input type="button" value="cos("
+						onclick="addFunction('cos(')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7"
+						onclick="addNumber('7')"></td>
+				<td><input type="button" value="8"
+						onclick="addNumber('8')"></td>
+				<td><input type="button" value="9"
+						onclick="addNumber('9')"></td>
+
+				<td><input type="button" value="x"
+						onclick="addDM('x')"></td>
+				<td><input type="button" value="sin("
+						onclick="addFunction('sin(')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="."
+						onclick="addNumber('.')"></td>
+				<td><input type="button" value="0"
+						onclick="addNumber('0')"></td>
+
+				<td><input type="button" value="+"
+						onclick="addAS('+')"></td>
+				<td><input type="button" value="/"
+						onclick="addDM('/')"></td>
+				<td><input type="button" value="tan("
+						onclick="addFunction('tan(')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="e"
+						onclick="addConstant('e')"></td>
+				<td><input type="button" value="pi"
+						onclick="addConstant('pi')"></td>
+				<td><input type="button" value="^("
+						onclick="addDM('^(')"></td>
+				<td><input type="button" value="("
+						onclick="addFunction('(')"></td>
+				<td><input type="button" value=")"
+						onclick="addClosed(')')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="ln("
+					onclick="addFunction('ln(')"></td>
+				<td><input type="button" value="log10("
+					onclick="addFunction('log10(')"></td>
+				<td><input type="button" value="sqrt("
+						onclick="addFunction('sqrt(')"></td>
+				<td><input type="button" value="abs("
+					onclick="addFunction('abs(')"></td>
+				<td><input type="button" value="exp("
+						onclick="addFunction('exp(')"></td>
+			</tr>
+		</table>
+	</form>
+    <script src="script.js"></script>
+</body>
+</html>
